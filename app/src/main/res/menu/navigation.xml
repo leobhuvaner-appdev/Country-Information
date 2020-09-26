@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_weather"
+        android:icon="@drawable/ic_cloud_black_24dp"
+        android:title="@string/title_weather" />
+
+    <item
+        android:id="@+id/navigation_country_list"
+        android:icon="@drawable/globe_icon"
+        android:title="@string/title_country" />
+
+    <item
+        android:id="@+id/navigation_country_info"
+        android:icon="@drawable/country_info"
+        android:title="@string/title_country_info" />
+</menu>

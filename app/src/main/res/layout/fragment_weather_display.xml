@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/cityNameDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/text_view_bg"
+            android:fontFamily="@font/allerta_stencil"
+            android:gravity="center"
+            android:padding="5dp"
+            android:visibility="invisible"
+            android:text="Current city"
+            android:textColor="@color/colorNavText"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/weather_details_display_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cityNameDisplay"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <ImageView
+            android:id="@+id/refresh_icon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/refresh_icon"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+</FrameLayout>

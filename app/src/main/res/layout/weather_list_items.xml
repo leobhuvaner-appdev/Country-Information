@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="10dp"
+        card_view:cardBackgroundColor="#2962FF"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="10dp">
+
+        <RelativeLayout
+            android:id="@+id/cardview_rel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/country_flage_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/sun_cloud"/>
+
+            <TextView
+                android:id="@+id/weather_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date :"
+                android:fontFamily="@font/capriola"
+                android:gravity="center_vertical"
+                android:layout_toEndOf="@+id/country_flage_img"
+                android:layout_alignTop="@+id/country_flage_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorNavText"
+                android:textSize="13dp" />
+            <TextView
+                android:id="@+id/weather_date_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26/12/1990"
+                android:fontFamily="@font/allerta_stencil"
+                android:gravity="center_vertical"
+                android:layout_toEndOf="@+id/weather_date"
+                android:layout_alignTop="@+id/weather_date"
+                android:layout_alignBottom="@+id/weather_date"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorNavText"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/main_cloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clouds"
+                android:fontFamily="@font/capriola"
+               android:layout_alignStart="@+id/weather_date"
+                android:layout_below="@+id/weather_date"
+                android:textStyle="bold"
+                android:textColor="@color/colorNavText"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/weather_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="light cloud"
+                android:fontFamily="@font/allerta_stencil"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_alignStart="@+id/weather_date_value"
+                android:layout_alignTop="@+id/main_cloud"
+                android:layout_alignBottom="@+id/main_cloud"
+                android:textStyle="bold"
+                android:textColor="@color/colorNavText"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/temp_humidity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temp/Humidity :"
+                android:fontFamily="@font/capriola"
+                android:gravity="center_vertical"
+                android:layout_alignStart="@+id/weather_date"
+                android:layout_below="@+id/main_cloud"
+                android:textStyle="bold"
+                android:textColor="@color/colorNavText"
+                android:textSize="13dp" />
+            <TextView
+                android:id="@+id/temp_humidity_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="300.66/65"
+                android:fontFamily="@font/allerta_stencil"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/temp_humidity_tv"
+               android:layout_alignTop="@+id/temp_humidity_tv"
+                android:layout_alignBottom="@+id/temp_humidity_tv"
+                android:textStyle="bold"
+                android:textColor="@color/colorNavText"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/weather_speed_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather Speed :"
+                android:fontFamily="@font/capriola"
+                android:gravity="center_vertical"
+                android:layout_alignStart="@+id/weather_date"
+                android:layout_below="@+id/temp_humidity_tv"
+                android:textStyle="bold"
+                android:textColor="@color/colorNavText"
+                android:textSize="13dp" />
+            <TextView
+                android:id="@+id/weather_speed_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.84"
+                android:fontFamily="@font/allerta_stencil"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/weather_speed_tv"
+                android:layout_alignTop="@+id/weather_speed_tv"
+                android:layout_alignBottom="@+id/weather_speed_tv"
+                android:textStyle="bold"
+                android:textColor="@color/colorNavText"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/weather_degree_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather degree :"
+                android:fontFamily="@font/capriola"
+                android:gravity="center_vertical"
+                android:layout_alignStart="@+id/weather_speed_tv"
+                android:layout_below="@+id/weather_speed_tv"
+                android:textStyle="bold"
+                android:textColor="@color/colorNavText"
+                android:textSize="13dp" />
+            <TextView
+                android:id="@+id/weather_degree_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="281"
+                android:fontFamily="@font/allerta_stencil"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/weather_degree_tv"
+                android:layout_alignTop="@+id/weather_degree_tv"
+                android:layout_alignBottom="@+id/weather_degree_tv"
+                android:textStyle="bold"
+                android:textColor="@color/colorNavText"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

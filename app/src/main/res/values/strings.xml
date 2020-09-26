@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Countries Information</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragment_weather">Weather</string>
+    <string name="fragment_country_info">Country Information</string>
+    <string name="title_weather">Weather</string>
+    <string name="title_country">Countries</string>
+    <string name="title_country_info">Country Info</string>
+    <string name="capital_hint">Capital :-</string>
+    <string name="region_hint">Region :-</string>
+    <string name="sub_region_hint">Sub Region :-</string>
+    <string name="area_hint">Area :-</string>
+    <string name="population_hint">Population :-</string>
+    <string name="country_hint">India</string>
+    <string name="query_search">Search country</string>
+</resources>
